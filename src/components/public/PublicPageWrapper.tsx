@@ -1,6 +1,7 @@
 import { TopBar } from './TopBar'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
+import { PWAInstall } from './PWAInstall'
 
 interface PublicPageWrapperProps {
   children: React.ReactNode
@@ -15,6 +16,7 @@ export function PublicPageWrapper({ children }: PublicPageWrapperProps) {
         {children}
       </main>
       <Footer />
+      <PWAInstall />
     </div>
   )
 }

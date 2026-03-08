@@ -2,6 +2,8 @@
   "name": "Ritmo Latino - Academia de Baile",
   "short_name": "RitmoLatino",
   "description": "La mejor academia de bailes latinos. Especialistas en Salsa, Bachata, Reguetón y Perreo.",
+  "id": "/",
+  "scope": "/",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
