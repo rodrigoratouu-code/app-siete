@@ -52,7 +52,7 @@ export function PWAInstall() {
         
         <div className="flex-1 min-w-0">
           <p className="text-white font-bold text-sm tracking-wide">Instalar App</p>
-          <p className="text-white/60 text-xs truncate">Añade Ritmo Latino a tu pantalla de inicio</p>
+          <p className="text-white/60 text-xs truncate">Añade PARTY PINTOROSA a tu pantalla de inicio</p>
         </div>
 
         <div className="flex items-center gap-2">

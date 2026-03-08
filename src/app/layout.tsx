@@ -3,20 +3,20 @@ import { siteConfig } from '@/config/siteConfig'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Ritmo Latino - Academia de Baile',
+  title: 'PARTY PINTOROSA - Academia de Baile',
   description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
   manifest: '/manifest.json',
   themeColor: '#FF007F',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Ritmo Latino',
+    title: 'PARTY PINTOROSA',
   },
   openGraph: {
-    title: 'Ritmo Latino - Academia de Baile',
+    title: 'PARTY PINTOROSA - Academia de Baile',
     description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
     locale: 'es_ES',
-    siteName: 'Ritmo Latino',
+    siteName: 'PARTY PINTOROSA',
     type: 'website',
   },
 }

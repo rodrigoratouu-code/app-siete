@@ -112,30 +112,30 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  firmName: 'Ritmo Latino',
+  firmName: 'PARTY PINTOROSA',
   firmSlogan: 'Siente la música, vive el baile',
   firmDescription: 'La mejor academia de bailes latinos. Especialistas en Salsa, Bachata, Reguetón y Perreo.',
-  founderName: 'Carlos "El Salsero" Ruiz',
-  founderTitle: 'Director y Coreógrafo Principal',
-  founderBio: 'Bailarín profesional con destacada trayectoria internacional. Ha llevado el sabor latino a múltiples escenarios y ahora lidera un equipo de instructores élite.',
+  founderName: 'Ibelisse Rosa',
+  founderTitle: 'Coordinadora General de Baile',
+  founderBio: 'Bailarina profesional con destacada trayectoria internacional. Ha llevado el sabor latino a múltiples escenarios y ahora lidera un equipo de instructores élite.',
   yearsExperience: 15,
   yearFounded: 2010,
 
   contact: {
-    phone: '+34912345678',
-    phoneDisplay: '+34 912 345 678',
-    email: 'baila@ritmolatino.com',
-    address: 'Calle del Ritmo 123, Barrio Sabor',
-    city: 'Madrid',
+    phone: '+34661526912',
+    phoneDisplay: '+34 661 526 912',
+    email: 'baila@partypintorosa.com',
+    address: 'Calle Santa Carolina 60',
+    city: 'Barcelona',
     country: 'España',
-    googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.13981293343!2d-3.8196191986506305!3d40.43786975971485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses',
-    whatsappNumber: '+34600123456',
+    googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.835467366373!2d2.1678144154261767!3d41.409384979262174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2c002cd1fb9%3A0x6b78eb2fffe81977!2sCarrer%20de%20Santa%20Carolina%2C%2060%2C%2008025%20Barcelona!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses',
+    whatsappNumber: '+34661526912',
     officeHours: 'Lunes a Domingo, 10:00 a.m. a 10:00 p.m.',
   },
 
   social: {
-    facebook: 'https://facebook.com/ritmolatino',
-    instagram: 'https://instagram.com/ritmolatino',
+    facebook: 'https://facebook.com/partypintorosa',
+    instagram: 'https://instagram.com/partypintorosa',
   },
 
   navigation: {
@@ -157,7 +157,7 @@ export const siteConfig: SiteConfig = {
   },
 
   hero: {
-    headline: 'Domina la Pista con Ritmo Latino',
+    headline: 'Domina la Pista con PARTY PINTOROSA',
     subheadline: 'Aprende Salsa, Bachata, Reguetón y Perreo. Únete a la comunidad de baile más vibrante y deja que la música guíe tus pasos.',
     ctaText: 'Reserva tu primera clase',
     ctaHref: '/contacto',
@@ -279,8 +279,8 @@ export const siteConfig: SiteConfig = {
   },
 
   seo: {
-    siteTitle: 'Ritmo Latino - Academia de Baile',
-    titleTemplate: '%s | Ritmo Latino',
+    siteTitle: 'PARTY PINTOROSA - Academia de Baile',
+    titleTemplate: '%s | PARTY PINTOROSA',
     defaultDescription: 'Academia de danza especialista en ritmos latinos. Clases de Salsa, Bachata, Reguetón y Perreo para todos los niveles.',
     locale: 'es_ES',
   },
