@@ -1,6 +1,6 @@
 {
-  "name": "Ritmo Latino - Academia de Baile",
-  "short_name": "RitmoLatino",
+  "name": "PARTY PINTOROSA - Academia de Baile",
+  "short_name": "PartyPintorosa",
   "description": "La mejor academia de bailes latinos. Especialistas en Salsa, Bachata, Reguetón y Perreo.",
   "id": "/",
   "scope": "/",
@@ -11,15 +11,16 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
+      "src": "/icons/icon-192x192-1.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "src": "/icons/icon-512x512-1.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
