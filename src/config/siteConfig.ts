@@ -8,6 +8,7 @@ export interface ServiceItem {
   slug: string
   shortDescription: string
   fullDescription: string
+  videoUrl?: string
 }
 
 export interface TeamMember {
@@ -187,6 +188,7 @@ export const siteConfig: SiteConfig = {
       slug: 'salsa',
       shortDescription: 'Aprende salsa en línea y cubana con la mejor técnica y sabor.',
       fullDescription: 'Domina los pasos libres, las vueltas en pareja y la musicalidad característica de la Salsa. Desde niveles básicos hasta avanzados, disfruta de este ritmo que enciende cualquier pista de baile.',
+      videoUrl: '/1.mp4',
     },
     {
       icon: 'custom',
@@ -194,6 +196,7 @@ export const siteConfig: SiteConfig = {
       slug: 'bachata',
       shortDescription: 'Conecta con tu pareja con los movimientos suaves de la bachata.',
       fullDescription: 'Expresión, conexión y fluidez corporal. Te enseñamos todas las técnicas de la bachata dominicana y la bachata sensual moderna, enfocándonos en la disociación corporal.',
+      videoUrl: '/2.mp4',
     },
     {
       icon: 'custom',
@@ -201,6 +204,7 @@ export const siteConfig: SiteConfig = {
       slug: 'regueton',
       shortDescription: 'Siente el beat urbano y domina las coreografías del momento.',
       fullDescription: 'Clases dinámicas para mejorar tu coordinación, estilo (styling) urbano y resistencia. Aprende de los pioneros del género con coreos explosivas.',
+      videoUrl: '/3.mp4',
     },
     {
       icon: 'custom',
@@ -208,6 +212,7 @@ export const siteConfig: SiteConfig = {
       slug: 'perreo',
       shortDescription: 'La clase para soltarte, trabajar tu movilidad de cadera y disfrutar sin complejos.',
       fullDescription: 'Enfocado en movimientos de cadera, floorwork, y actitud callejera. Un espacio seguro para aprender los pasos del perreo y liberar energía al máximo.',
+      videoUrl: '/4.mp4',
     },
   ],
 
