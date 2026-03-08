@@ -5,6 +5,13 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Ritmo Latino - Academia de Baile',
   description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
+  manifest: '/manifest.json',
+  themeColor: '#FF007F',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Ritmo Latino',
+  },
   openGraph: {
     title: 'Ritmo Latino - Academia de Baile',
     description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
@@ -21,7 +28,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#FF007F" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+      </head>
+      <body>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js').then(
+                    function(registration) {
+                      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    },
+                    function(err) {
+                      console.log('ServiceWorker registration failed: ', err);
+                    }
+                  );
+                });
+              }
+            `,
+          }}
+        />
+      </body>
     </html>
   )
 }
