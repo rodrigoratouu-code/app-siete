@@ -2,8 +2,8 @@ const CACHE_NAME = 'party-pintorosa-cache-v2';
 const urlsToCache = [
   '/',
   '/manifest.json',
-  '/icons/icon-192x192-1.png',
-  '/icons/icon-512x512-1.png'
+  '/icons/icono-192x192-1.png',
+  '/icons/icono-512x512-1.png'
 ];
 
 self.addEventListener('install', (event) => {
