@@ -124,7 +124,7 @@ export const siteConfig: SiteConfig = {
   contact: {
     phone: '+34661526912',
     phoneDisplay: '+34 661 526 912',
-    email: 'baila@partypintorosa.com',
+    email: 'dominicana2226@gmail.com',
     address: 'Calle Santa Carolina 60',
     city: 'Barcelona',
     country: 'España',

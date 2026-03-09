@@ -6,6 +6,16 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center pt-24 pb-12 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/dancing.png"
+          alt="Gente aprendiendo a bailar ritmos latinos"
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#0a0a0a]" />
+      </div>
+
       {/* Content wrapper with margin auto to center, z-10 properly stacks on top of bg */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center justify-center text-center">
         

@@ -11,13 +11,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icons/icono-192x192-1.png",
+      "src": "/icons/PartyRP-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icono-512x512-1.png",
+      "src": "/icons/PartyRP-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
