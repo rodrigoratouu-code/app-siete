@@ -6,7 +6,7 @@ import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, WhatsAppIcon } from '@/comp
 
 export const metadata: Metadata = {
   title: siteConfig.seo.titleTemplate.replace('%s', 'Contacto'),
-  description: `Contáctenos para una consulta gratuita. ${siteConfig.firmName} - ${siteConfig.contact.address}, ${siteConfig.contact.city}. Tel: ${siteConfig.contact.phoneDisplay}`,
+  description: `¡Aprende a bailar ritmos latinos! Salsa, Bachata, Reguetón y Perreo en ${siteConfig.contact.city}. Reserva tu primera clase en ${siteConfig.firmName}.`,
 }
 
 export default function ContactoPage() {
@@ -15,24 +15,24 @@ export default function ContactoPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#FF007F]/20 to-[#00F0FF]/20 py-16 lg:py-24 border-b border-white/10">
+      <section className="bg-gradient-to-br from-teal-800 to-teal-700 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            label="Contacto"
-            title="Aprende a Bailar Ritmos Latinos"
-            subtitle="¿Listo para dar tu primer paso? Contáctanos para informarte sobre nuestras clases de Salsa, Bachata, Reguetón y más."
+            label="Inscríbete"
+            title="¡Aprende a Bailar Ritmos Latinos!"
+            subtitle="Salsa, Bachata, Reguetón y Perreo. Da el primer paso y descubre el ritmo que llevas dentro. Clases para todos los niveles."
             light
           />
         </div>
       </section>
 
       {/* Contact form + Map */}
-      <section className="py-20 bg-[#0a0a0a]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Map + Info */}
-            <div className="card-glass p-8">
-              <div className="rounded-2xl overflow-hidden shadow-neon h-[350px] mb-8 border border-white/10">
+            <div>
+              <div className="rounded-2xl overflow-hidden shadow-elevated h-[350px] mb-8">
                 <iframe
                   src={contact.googleMapsEmbedUrl}
                   width="100%"
@@ -46,32 +46,32 @@ export default function ContactoPage() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <MapPinIcon className="w-5 h-5 text-[#00F0FF] mt-0.5 shrink-0" />
+                <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+                  <MapPinIcon className="w-5 h-5 text-teal-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-semibold text-white text-body-sm">Dirección</p>
-                    <p className="text-body-xs text-white/70">{contact.address}, {contact.city}, {contact.country}</p>
+                    <p className="font-semibold text-gray-900 text-body-sm">Nuestra Academia</p>
+                    <p className="text-body-xs text-foreground-secondary">{contact.address}, {contact.city}, {contact.country}</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <PhoneIcon className="w-5 h-5 text-[#00F0FF] mt-0.5 shrink-0" />
+                <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+                  <PhoneIcon className="w-5 h-5 text-teal-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-semibold text-white text-body-sm">Teléfono</p>
-                    <a href={`tel:${contact.phone}`} className="text-body-xs text-[#00F0FF] hover:text-[#FF007F] transition-colors">{contact.phoneDisplay}</a>
+                    <p className="font-semibold text-gray-900 text-body-sm">Llámanos</p>
+                    <a href={`tel:${contact.phone}`} className="text-body-xs text-teal-600 hover:underline">{contact.phoneDisplay}</a>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <MailIcon className="w-5 h-5 text-[#00F0FF] mt-0.5 shrink-0" />
+                <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+                  <MailIcon className="w-5 h-5 text-teal-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-semibold text-white text-body-sm">Email</p>
-                    <a href={`mailto:${contact.email}`} className="text-body-xs text-[#00F0FF] hover:text-[#FF007F] transition-colors">{contact.email}</a>
+                    <p className="font-semibold text-gray-900 text-body-sm">Escríbenos</p>
+                    <a href={`mailto:${contact.email}`} className="text-body-xs text-teal-600 hover:underline">{contact.email}</a>
                   </div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <ClockIcon className="w-5 h-5 text-[#00F0FF] mt-0.5 shrink-0" />
+                <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+                  <ClockIcon className="w-5 h-5 text-teal-600 mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-semibold text-white text-body-sm">Horario</p>
-                    <p className="text-body-xs text-white/70">{contact.officeHours}</p>
+                    <p className="font-semibold text-gray-900 text-body-sm">Horario de Clases</p>
+                    <p className="text-body-xs text-foreground-secondary">{contact.officeHours}</p>
                   </div>
                 </div>
               </div>
@@ -81,23 +81,21 @@ export default function ContactoPage() {
                   href={`https://wa.me/${contact.whatsappNumber.replace(/[^0-9]/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 mt-6 w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg hover:shadow-[#25D366]/20"
+                  className="flex items-center justify-center gap-2 mt-6 w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3.5 rounded-xl transition-colors"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
-                  Escribir por WhatsApp
+                  Reserva tu Clase por WhatsApp
                 </a>
               )}
             </div>
 
             {/* Form */}
-            <div className="card-glass p-8">
-              <h2 className="font-heading text-display-xs text-white mb-2">Envíanos un Mensaje</h2>
-              <p className="text-body-md text-white/70 mb-8">
-                Completa el formulario y nos pondremos en contacto contigo para empezar a bailar.
+            <div>
+              <h2 className="font-heading text-display-xs text-gray-900 mb-2">¡Reserva tu Primera Clase!</h2>
+              <p className="text-body-md text-foreground-secondary mb-8">
+                Déjanos tus datos y te contactaremos para que empieces a bailar desde el primer día. Clases de Salsa, Bachata, Reguetón y Perreo para todos los niveles.
               </p>
-              <div className="[&_label]:text-white/70 [&_input]:bg-white/5 [&_input]:border-white/10 [&_input]:text-white [&_textarea]:bg-white/5 [&_textarea]:border-white/10 [&_textarea]:text-white">
-                <ContactForm />
-              </div>
+              <ContactForm />
             </div>
           </div>
         </div>

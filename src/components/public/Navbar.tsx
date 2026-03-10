@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { siteConfig } from '@/config/siteConfig'
 import { ChevronDownIcon, MenuIcon } from './icons'
 import { MobileMenu } from './MobileMenu'
@@ -34,7 +35,14 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image
+                src="/icons/PartyRP-192.png"
+                alt={siteConfig.firmName}
+                width={44}
+                height={44}
+                className="rounded-full shadow-neon"
+              />
               <div>
                 <span className="font-heading text-2xl lg:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF007F] to-[#00F0FF] tracking-tighter">
                   {siteConfig.firmName.split(' ')[0]}

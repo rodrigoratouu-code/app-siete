@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { siteConfig } from '@/config/siteConfig'
 import { CloseIcon, ChevronDownIcon, PhoneIcon, MailIcon, MapPinIcon } from './icons'
 
@@ -24,7 +25,14 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
       <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-[#0a0a0a]/90 backdrop-blur-xl shadow-neon border-l border-white/10 animate-slide-in-right overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b border-white/10">
-          <Link href="/" className="flex items-center gap-2" onClick={onClose}>
+          <Link href="/" className="flex items-center gap-3" onClick={onClose}>
+            <Image
+              src="/icons/PartyRP-192.png"
+              alt={siteConfig.firmName}
+              width={36}
+              height={36}
+              className="rounded-full shadow-neon"
+            />
             <span className="font-heading text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF007F] to-[#00F0FF]">{siteConfig.firmName}</span>
           </Link>
           <button onClick={onClose} className="p-2 text-white/70 hover:text-white" aria-label="Cerrar menú">

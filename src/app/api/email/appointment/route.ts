@@ -8,7 +8,7 @@ import {
 } from '@/lib/email'
 
 // Admin email to receive all notifications
-const ADMIN_EMAIL = 'sinsajo.creators@gmail.com'
+const ADMIN_EMAIL = 'dominicana2226@gmail.com'
 
 interface AppointmentEmailRequest {
   type: 'created' | 'status_changed'

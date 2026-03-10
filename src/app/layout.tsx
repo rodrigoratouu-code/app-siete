@@ -31,6 +31,7 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#FF007F" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icons/PartyRP-192.png" />
         <link rel="apple-touch-icon" href="/icons/PartyRP-192.png" />
       </head>
       <body>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { siteConfig } from '@/config/siteConfig'
 import { PhoneIcon, MailIcon, MapPinIcon, ClockIcon, FacebookIcon, InstagramIcon, LinkedInIcon } from './icons'
 
@@ -13,7 +14,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Column 1: About */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6">
+              <Image
+                src="/icons/PartyRP-192.png"
+                alt={siteConfig.firmName}
+                width={40}
+                height={40}
+                className="rounded-full shadow-neon"
+              />
               <span className="font-heading text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF007F] to-[#00F0FF]">{siteConfig.firmName}</span>
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6 font-medium">
