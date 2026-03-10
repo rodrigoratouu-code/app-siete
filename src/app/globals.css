@@ -12,7 +12,7 @@
    ============================================ */
 
 :root {
-  /* Superficies (Oscuras para que el neón resalte) */
+  /* Superficies (Oscuras por defecto) */
   --color-background: #0a0a0a;
   --color-surface: rgba(23, 23, 23, 0.4);
   --color-foreground: #FFFFFF;
@@ -21,6 +21,15 @@
   /* Sombras Glass */
   --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   --shadow-neon: 0 0 15px rgba(255, 0, 127, 0.5);
+}
+
+.light {
+  --color-background: #F8FAFC;
+  --color-surface: rgba(255, 255, 255, 0.8);
+  --color-foreground: #0F172A;
+  --color-border: rgba(15, 23, 42, 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  --shadow-neon: 0 0 15px rgba(255, 0, 127, 0.2);
 }
 
 html {
@@ -54,8 +63,8 @@ body::before {
     radial-gradient(circle at 80% 70%, rgba(176, 38, 255, 0.08) 0%, transparent 50%),
     
     /* Grid de Líneas (Squares) */
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
     
   background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
   background-attachment: fixed;

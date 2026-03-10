@@ -112,9 +112,9 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  firmName: 'PARTY PINTOROSA',
+  firmName: 'PARTY Pinto Rosa',
   firmSlogan: 'Siente la música, vive el baile',
-  firmDescription: 'La mejor academia de bailes latinos. Especialistas en Salsa, Bachata, Reguetón y Perreo.',
+  firmDescription: 'Baila donde tú quieras: Tu escuela de baile móvil en Barcelona. En Pinto Rosa, rompemos las barreras de la academia tradicional. Tú elige el escenario, nosotros ponemos el ritmo.',
   founderName: 'Ibelisse Rosa',
   founderTitle: 'Coordinadora General de Baile',
   founderBio: 'Bailarina profesional con destacada trayectoria internacional. Ha llevado el sabor latino a múltiples escenarios y ahora lidera un equipo de instructores élite.',
@@ -157,8 +157,8 @@ export const siteConfig: SiteConfig = {
   },
 
   hero: {
-    headline: 'Domina la Pista con PARTY PINTOROSA',
-    subheadline: 'Aprende Salsa, Bachata, Reguetón y Perreo. Únete a la comunidad de baile más vibrante y deja que la música guíe tus pasos.',
+    headline: 'Domina la Pista con PARTY Pinto Rosa',
+    subheadline: 'Baila donde tú quieras: Tu escuela de baile móvil en Barcelona. Aprende Salsa, Bachata, Reguetón y Perreo con un sistema a medida.',
     ctaText: 'Reserva tu primera clase',
     ctaHref: '/contacto',
   },
@@ -279,9 +279,9 @@ export const siteConfig: SiteConfig = {
   },
 
   seo: {
-    siteTitle: 'PARTY PINTOROSA - Academia de Baile',
-    titleTemplate: '%s | PARTY PINTOROSA',
-    defaultDescription: 'Academia de danza especialista en ritmos latinos. Clases de Salsa, Bachata, Reguetón y Perreo para todos los niveles.',
+    siteTitle: 'PARTY Pinto Rosa - Escuela de Baile Móvil Barcelona',
+    titleTemplate: '%s | PARTY Pinto Rosa',
+    defaultDescription: 'Baila donde tú quieras en Barcelona. Clases de baile a domicilio, al aire libre o en estudio. Salsa, Bachata y ritmos urbanos con PARTY Pinto Rosa.',
     locale: 'es_ES',
   },
 

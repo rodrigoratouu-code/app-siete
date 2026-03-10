@@ -3,20 +3,20 @@ import { siteConfig } from '@/config/siteConfig'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'PARTY PINTOROSA - Academia de Baile',
-  description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
+  title: 'PARTY Pinto Rosa - Academia de Baile',
+  description: 'Baila donde tú quieras en Barcelona. Tu escuela de baile móvil.',
   manifest: '/manifest.json',
   themeColor: '#FF007F',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'PARTY PINTOROSA',
+    title: 'PARTY Pinto Rosa',
   },
   openGraph: {
-    title: 'PARTY PINTOROSA - Academia de Baile',
-    description: 'Aprende Salsa, Bachata, Reguetón y Perreo con los mejores.',
+    title: 'PARTY Pinto Rosa - Academia de Baile',
+    description: 'Baila donde tú quieras en Barcelona. Tu escuela de baile móvil.',
     locale: 'es_ES',
-    siteName: 'PARTY PINTOROSA',
+    siteName: 'PARTY Pinto Rosa',
     type: 'website',
   },
 }

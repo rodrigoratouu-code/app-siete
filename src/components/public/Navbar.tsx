@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { siteConfig } from '@/config/siteConfig'
 import { ChevronDownIcon, MenuIcon } from './icons'
 import { MobileMenu } from './MobileMenu'
+import { ThemeToggle } from './ThemeToggle'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -33,28 +34,28 @@ export function Navbar() {
     <>
       <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'glass border-b border-white/20' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24">
+          <div className="flex items-center justify-between h-28">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
+            <Link href="/" className="flex items-center gap-4 group">
               <Image
                 src="/icons/PartyRP-192.png"
                 alt={siteConfig.firmName}
-                width={44}
-                height={44}
-                className="rounded-full shadow-neon"
+                width={58}
+                height={58}
+                className="rounded-full shadow-neon group-hover:scale-105 transition-transform duration-500"
               />
-              <div>
-                <span className="font-heading text-2xl lg:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF007F] to-[#00F0FF] tracking-tighter">
+              <div className="flex flex-col -gap-1">
+                <span className="font-heading text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF007F] to-[#00F0FF] tracking-tighter leading-none">
                   {siteConfig.firmName.split(' ')[0]}
                 </span>
-                <span className="font-heading text-2xl lg:text-3xl font-light text-white tracking-tighter ml-2">
+                <span className="font-heading text-xl lg:text-2xl font-light text-white tracking-widest leading-none ml-1 opacity-90">
                   {siteConfig.firmName.split(' ').slice(1).join(' ')}
                 </span>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-2" ref={dropdownRef}>
+            <div className="hidden lg:flex items-center gap-4" ref={dropdownRef}>
               {siteConfig.navigation.items.map((item) => (
                 <div key={item.label} className="relative">
                   {item.children ? (
@@ -93,12 +94,16 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-              <Link
-                href="/contacto"
-                className="ml-6 flex items-center justify-center btn-neon"
-              >
-                Inscribirme
-              </Link>
+              
+              <div className="flex items-center gap-4 ml-6 pl-6 border-l border-white/10">
+                <ThemeToggle />
+                <Link
+                  href="/contacto"
+                  className="flex items-center justify-center btn-neon"
+                >
+                  Inscribirme
+                </Link>
+              </div>
             </div>
 
             {/* Mobile hamburger */}
