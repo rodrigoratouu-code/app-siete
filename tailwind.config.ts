@@ -22,8 +22,8 @@ const config: Config = {
           500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 800: '#155e75', 900: '#164e63', 950: '#083344',
           DEFAULT: '#00F0FF', // Neon Cyan
         },
-        background: '#0a0a0a',
-        surface: '#171717',
+        background: '#2f0786ff',
+        surface: '#032839ff',
         foreground: {
           DEFAULT: '#FFFFFF',
           secondary: '#E5E5E5',
