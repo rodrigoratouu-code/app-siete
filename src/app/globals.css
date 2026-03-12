@@ -12,9 +12,9 @@
    ============================================ */
 
 :root {
-  /* Superficies (Oscuras por defecto) */
-  --color-background: #0a0a0a;
-  --color-surface: rgba(23, 23, 23, 0.4);
+  /* Superficies (Oscuras por defecto - Nuevos Colores) */
+  --color-background: #2f0786;
+  --color-surface: rgba(3, 40, 57, 0.4);
   --color-foreground: #FFFFFF;
   --color-border: rgba(255, 255, 255, 0.2);
 
@@ -24,10 +24,10 @@
 }
 
 .light {
-  --color-background: #F8FAFC;
-  --color-surface: rgba(255, 255, 255, 0.8);
-  --color-foreground: #0F172A;
-  --color-border: rgba(15, 23, 42, 0.1);
+  --color-background: #F0F4F8;
+  --color-surface: rgba(255, 255, 255, 0.9);
+  --color-foreground: #1A202C;
+  --color-border: rgba(26, 32, 44, 0.1);
   --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
   --shadow-neon: 0 0 15px rgba(255, 0, 127, 0.2);
 }
@@ -55,7 +55,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #050505;
+  background-color: var(--color-background);
   
   /* Gradiente base sutil (Mesh) */
   background-image: 
